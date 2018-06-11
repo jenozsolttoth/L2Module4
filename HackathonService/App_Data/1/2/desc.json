@@ -1,0 +1,6 @@
+{
+    "processorDecoratorTypes": [ "EPAM.Hackathon.Challenges.Logic.CookieBasedStepProcessorDecorator, EPAM.Hackathon.Challenges.Logic.Web.2018" ],
+    "processorArgs": {
+        "fileName": "hidden.txt"
+    }
+}

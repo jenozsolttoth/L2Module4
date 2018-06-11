@@ -1,0 +1,1 @@
+﻿The solution is the content of the HTTP Cookie 'solution', which is 'csoki golyó'.

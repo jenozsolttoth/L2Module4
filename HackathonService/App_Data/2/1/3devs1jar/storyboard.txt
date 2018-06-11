@@ -1,0 +1,46 @@
+﻿1.
+
+this is a c64 screen.
+peek/poke suggest that this is the screenbuffer of the c64.
+selecting the page will reveal a hexa string which represents the screen.
+rendering the screen will produce a URL (with ascii art)
+
+the url is HTTP://CHALLENGE2018.HUNGARY.EPAM.COM/CONTENT/3DEVS1JAR-
+
+2.
+
+the url is a zip file, conatining the original (but modified) version of Zork
+if the players google 'zork playthrough' or similar, they will see how to play the game
+their goal is just folow the first steps of the walkthru:
+
+- get into the house
+- go to the living room
+- get the lamp & sword, then go down the trap door (hidden beneath the rug)
+- most guides say to go NORTH, but the Troll is >>EAST<< in this version (the challenge's hint will tell this to the players)
+- as soon as they get to the troll they'll see a strange object on the screen that is obviously the solution
+- picking up & inspecting the object will revea lthe code 'v='
+
+commandlist:
+
+south
+east
+open window
+enter
+west
+take lantern
+take sword
+move rug
+open trap door
+down
+turn on lamp
+east
+take lcd
+describe lcd
+
+the Troll attacks & kills the players randomly
+
+3.
+
+http://youtube.com/watch?v=
+
+the video hides the solution to this challenge: ''

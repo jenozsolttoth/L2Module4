@@ -1,0 +1,6 @@
+{
+    "processorType": "EPAM.Hackathon.Challenges.Logic.Services.Steps.RedirectToCustomViewChallengeStepProcessor",
+    "processorArgs": {
+        "viewRoute": "/slack"
+    }
+}

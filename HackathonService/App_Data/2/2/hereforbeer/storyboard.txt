@@ -1,0 +1,1 @@
+﻿This step will force everyone to register on Slack. A team cannot progress until all 3 of its members have joined.

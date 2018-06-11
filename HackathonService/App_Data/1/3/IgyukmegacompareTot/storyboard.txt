@@ -1,0 +1,8 @@
+﻿Fix the javascript code in the page.
+
+- the last part should be 'return h' instead of just 'h'
+- it has 6665 as a constant instead of 65
+
+The JS implements the caesar-cipher aka. 'ROT(N)'.
+
+	ROT('Wvczev Wveevtwfo', 9) = 'Feline Fennecfox'
