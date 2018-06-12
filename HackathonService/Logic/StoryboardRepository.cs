@@ -18,11 +18,17 @@ namespace HackathonService.Logic
         public string GetSolution()
         {
             var path = Directory.GetFiles(_teamPath).Where(f => Path.GetFileName(f) == "sln.txt").FirstOrDefault();
-            var file = new FileStream(path, FileMode.Open);
-            var buffer = new Byte[file.Length];
-            file.ReadAsync(buffer, 0, (int)file.Length);
-            var reader = new StreamReader(file);
-            return reader.ReadToEnd();
+            string result = "";
+            if (!String.IsNullOrEmpty(path))
+            {
+                File.ReadAllText(path);
+            }
+            //var file = new FileStream(path, FileMode.Open);
+            //var buffer = new Byte[file.Length];
+            //file.ReadAsync(buffer, 0, (int)file.Length);
+            //var reader = new StreamReader(file);
+            //reader.Close();
+            return result;
         }
     }
 }

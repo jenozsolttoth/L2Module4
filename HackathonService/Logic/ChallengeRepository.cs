@@ -12,6 +12,7 @@ namespace HackathonService.Logic
     {
         public string[] GetAll()
         {
+
             var codeBase = HttpContext.Current.Request.PhysicalApplicationPath;
             var appDirContent = IoHelper.GetAllItem(Path.GetDirectoryName(codeBase));
             var root = appDirContent.FirstOrDefault(a => a.EndsWith("App_Data"));
@@ -59,6 +60,8 @@ namespace HackathonService.Logic
             var result = new Dictionary<string, string>();
             foreach (var folder in folders)
             {
+                StoryboardRepository repo = new StoryboardRepository(folder);
+                string solution = repo.GetSolution();
                 result.Add(folder, new StoryboardRepository(folder).GetSolution());
             }
 

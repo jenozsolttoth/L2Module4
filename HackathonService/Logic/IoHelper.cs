@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace HackathonService.Logic
@@ -15,10 +16,6 @@ namespace HackathonService.Logic
                 {
                     list.Add(directory);
                 }
-                foreach (var files in Directory.GetFiles(path))
-                {
-                    list.Add(files);
-                }
 
                 foreach (var directory in list.ToArray())
                 {
@@ -30,6 +27,21 @@ namespace HackathonService.Logic
             {
                 return new string[0];
             }
+        }
+
+        public static string[] GetAllFiles(string path)
+        {
+            try
+            {
+                var list = new List<string>();
+                list.AddRange(Directory.GetFiles(path));
+                return list.ToArray();
+            }
+            catch (Exception e)
+            {
+                return new string[0];
+            }
+
         }
     }
 }
