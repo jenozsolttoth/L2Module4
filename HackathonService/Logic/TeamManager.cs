@@ -28,7 +28,7 @@ namespace HackathonService.Logic
             try
             {
                 result = new ChallengeRepository().GetSolutions().Result
-                    .Where(kvp => kvp.Key.EndsWith("\\" + challengeId + "\\" + taskId + "\\" + teamId)).First().Value;
+                    .First(kvp => kvp.Key.EndsWith("\\" + challengeId + "\\" + taskId + "\\" + teamId)).Value;
             }
             catch (Exception ex)
             {

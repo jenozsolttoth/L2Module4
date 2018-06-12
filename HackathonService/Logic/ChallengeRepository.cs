@@ -45,10 +45,6 @@ namespace HackathonService.Logic
                     var teamRepository = new TeamRepository(task);
                     var teams = teamRepository.GetAll();
                     result.AddRange(teams);
-                    //foreach (var team in teams)
-                    //{
-                    //    result.Add(team);
-                    //}
                 }
             }
             return result;
